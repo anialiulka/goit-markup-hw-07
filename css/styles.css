@@ -154,7 +154,8 @@ img {
 	line-height: 1.1;
 	text-align: center;
 }
-.hero-btn {
+.hero-btn,
+.submit-button {
 	display: block;
 	border: 0;
 	border-radius: 4px;
@@ -468,16 +469,27 @@ img {
 	opacity: 0;
 	pointer-events: none;
 }
+
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(1.2);
 }
+.backdrop {
+	position: fixed;
+	top: 0;
+	width: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 96px;
+	padding-left: 18px;
+	padding-right: 18px;
+	overflow-y: scroll;
+	background-color: rgba(46, 47, 66, 0.4);
+	transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
-	width: 408px;
-	padding: 72px 24px 24px 24px;
+	position: relative;
+	min-width: 392px;
+	padding: 72px 16px 24px 16px;
 	border-radius: 4px;
 	background-color: var(--modal-background-color);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -498,6 +510,10 @@ img {
 	cursor: pointer;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-button {
+	height: 8px;
+	width: 8px;
+}
 .modal-button:hover,
 .modal-button:focus {
 	background-color: #404bbf;
@@ -511,13 +527,13 @@ textarea {
 .modal-text {
 	margin-bottom: 16px;
 	color: var(--secondary-text-color);
-	margin-bottom: 16px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	text-align: center;
 }
+
 .submit-button {
 	display: block;
 	width: 170px;
