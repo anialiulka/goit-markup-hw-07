@@ -68,8 +68,6 @@ img {
 @media screen and (min-width: 1200px) {
 	.container {
 		width: 1200px;
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 }
 .section {
@@ -100,9 +98,17 @@ img {
 
 @media screen and (min-width: 768px) {
 	.main-nav {
-		padding: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 }
+@media screen and (min-width: 1200px) {
+	.main-nav {
+		gap: 76px;
+		align-items: center;
+	}
+}
+
 /* logo */
 .logo {
 	margin-right: 77px;
@@ -118,6 +124,11 @@ img {
 @media screen and (min-width: 768px) {
 	.logo {
 		margin-right: 123px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.logo {
+		margin-right: 0;
 	}
 }
 .logo-front {
@@ -149,6 +160,14 @@ img {
 		gap: 118px;
 		padding: 0;
 		height: 100%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.drop-menu {
+		gap: 332px;
+		padding: 0;
+		height: 100%;
+		align-items: center;
 	}
 }
 .drop-menu.is-open {
@@ -203,6 +222,7 @@ img {
 		align-items: center;
 	}
 }
+
 .site-nav .our-link {
 	display: block;
 	padding-top: 24px;
@@ -254,13 +274,22 @@ img {
 	flex-direction: column-reverse;
 	gap: 40px;
 }
+.contacts:hover {
+	color: var(--logo-hover-color);
+}
 @media screen and (min-width: 768px) {
 	.list.contacts {
 		flex-direction: column;
 		gap: 4px;
 	}
 }
-
+@media screen and (min-width: 1200px) {
+	.list.contacts {
+		flex-direction: row;
+		gap: 40px;
+		align-items: center;
+	}
+}
 .phone-number {
 	font-style: normal;
 	font-weight: 600;
@@ -286,6 +315,15 @@ img {
 		color: var(--primary-text-color);
 	}
 }
+@media screen and (min-width: 1200px) {
+	.contacts .item,
+	.our-mail,
+	.contacts {
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+	}
+}
 .social-media.company {
 	gap: 56px;
 }
@@ -305,6 +343,20 @@ img {
 		padding-bottom: 10px;
 	}
 }
+@media screen and (min-width: 768px) {
+	.phone-mail {
+		padding-top: 24px;
+		padding-bottom: 10px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.phone-mail {
+		display: block;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+
 /* hero */
 .hero {
 	padding-bottom: 112px;
