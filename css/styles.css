@@ -129,7 +129,9 @@ img {
 	display: none;
 }
 .drop-menu.is-open {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -141,6 +143,8 @@ img {
 /* navigation */
 .drop-menu {
 	padding: 80px 40px 40px 40px;
+	height: 796px;
+	width: 100%;
 }
 .button-general {
 	display: flex;
@@ -163,9 +167,7 @@ img {
 .site-nav .item:not(:last-child) {
 	margin-bottom: 40px;
 }
-.site-nav .item:last-child {
-	margin-bottom: 284px;
-}
+
 .site-nav .our-link {
 	font-size: 36px;
 	font-weight: 700;
@@ -173,18 +175,42 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 }
-.our-link {
-	color: var(--logo-hover-color);
-}
+
 .site-nav .our-link:hover,
 .site-nav .our-link:focus {
-	color: var(--primary-text-color);
+	color: var(--active-hero-button);
 }
 .site-nav .our-link:active {
 	color: var(--logo-hover-color);
 }
 
 /* contacts */
+.list.contacts {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 40px;
+}
+.phone-number {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1.1;
+	color: var(--logo-hover-color);
+}
+.our-mail {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	color: var(--primary-text-color);
+}
+.social-media.company {
+	gap: 56px;
+}
+.test {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
 /* hero */
 .hero {
 	padding-bottom: 112px;
@@ -327,11 +353,14 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+/* general media styles */
 .social-media {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+.team .social-media {
 	gap: 24px;
 	padding-left: 16px;
 	padding-right: 16px;
@@ -357,6 +386,7 @@ img {
 	height: 16px;
 	width: 16px;
 }
+
 /* customers */
 .clients {
 	display: flex;
