@@ -110,6 +110,11 @@ img {
 	text-transform: uppercase;
 	cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+	.logo {
+		margin-right: 123px;
+	}
+}
 .logo-front {
 	color: #4d5ae5;
 }
@@ -122,14 +127,30 @@ img {
 	border: 0;
 	background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+	.menu-button {
+		display: none;
+	}
+}
 .icon-menu {
 	fill: var(--secondary-text-color);
 }
 .drop-menu {
 	display: none;
 }
+@media screen and (min-width: 768px) {
+	.drop-menu {
+		display: flex;
+		gap: 118px;
+		padding: 0;
+		height: 100%;
+	}
+}
 .drop-menu.is-open {
 	display: flex;
+	padding: 80px 40px 40px 40px;
+	height: 796px;
+	width: 100%;
 	flex-direction: column;
 	justify-content: space-between;
 	position: absolute;
@@ -140,12 +161,6 @@ img {
 	box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229, 0px 2px 1px 0px #2e2f4214;
 }
 
-/* navigation */
-.drop-menu {
-	padding: 80px 40px 40px 40px;
-	height: 796px;
-	width: 100%;
-}
 .button-general {
 	display: flex;
 	align-items: center;
@@ -164,10 +179,21 @@ img {
 	top: 40px;
 	right: 40px;
 }
+@media screen and (min-width: 768px) {
+	.menu-close {
+		display: none;
+	}
+}
+
 .site-nav .item:not(:last-child) {
 	margin-bottom: 40px;
 }
-
+@media screen and (min-width: 768px) {
+	.site-nav .list {
+		display: flex;
+		gap: 40px;
+	}
+}
 .site-nav .our-link {
 	font-size: 36px;
 	font-weight: 700;
@@ -175,7 +201,13 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 }
-
+@media screen and (min-width: 768px) {
+	.site-nav .our-link {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.5;
+	}
+}
 .site-nav .our-link:hover,
 .site-nav .our-link:focus {
 	color: var(--active-hero-button);
@@ -189,6 +221,27 @@ img {
 	display: flex;
 	flex-direction: column-reverse;
 	gap: 40px;
+}
+@media screen and (min-width: 768px) {
+	.list.contacts {
+		flex-direction: column;
+		gap: 4px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.contacts .item {
+		flex-direction: column;
+		gap: 4px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.contacts {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.3;
+		letter-spacing: 0.04em;
+		color: var(--primary-text-color);
+	}
 }
 .phone-number {
 	font-style: normal;
@@ -206,7 +259,12 @@ img {
 .social-media.company {
 	gap: 56px;
 }
-.test {
+@media screen and (min-width: 768px) {
+	.social-media.company {
+		display: none;
+	}
+}
+.phone-mail {
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
