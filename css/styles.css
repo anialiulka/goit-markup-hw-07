@@ -220,8 +220,6 @@ img {
 
 .site-nav .our-link {
 	display: block;
-	padding-top: 24px;
-	padding-bottom: 24px;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.1;
@@ -230,6 +228,8 @@ img {
 }
 @media screen and (min-width: 768px) {
 	.site-nav .our-link {
+		padding-top: 24px;
+		padding-bottom: 24px;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 1.5;
@@ -353,6 +353,7 @@ img {
 }
 
 /* hero */
+
 .hero {
 	max-width: 428px;
 	margin-left: auto;
@@ -405,13 +406,40 @@ img {
 	padding-top: 112px;
 	background-color: black;
 }
+@media (min-width: 768px) {
+	.hero {
+		padding-bottom: 108px;
+	}
+}
+@media (min-width: 1200px) {
+	.hero {
+		padding-bottom: 188px;
+	}
+}
 .hero .heading {
 	margin-bottom: 72px;
 	color: var(--alternative-text-color);
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 700;
 	line-height: 1.1;
 	text-align: center;
+}
+@media (min-width: 346px) {
+	.hero .heading {
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero .heading {
+		margin-bottom: 40px;
+		font-size: 56px;
+	}
+}
+@media (min-width: 1200px) {
+	.hero .heading {
+		margin-bottom: 48px;
+	}
 }
 .hero-btn,
 .submit-button {
@@ -437,6 +465,10 @@ img {
 		line-height: 1.2;
 	}
 }
+.values .heading {
+	margin-bottom: 8px;
+}
+
 .values .description {
 	font-size: 16px;
 	font-weight: 500;
@@ -511,11 +543,19 @@ img {
 .team .heading,
 .customers .heading,
 .values .heading {
-	margin-bottom: 72px;
 	color: var(--secondary-text-color);
 	font-size: 36px;
 	line-height: 1.1;
 	text-align: center;
+}
+/* @media (min-width: 768px) {
+	.values .heading {
+		align-items: left;
+	}
+} */
+.team .heading,
+.customers .heading {
+	margin-bottom: 72px;
 }
 .team .name,
 .projects .heading {
