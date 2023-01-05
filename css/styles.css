@@ -50,11 +50,6 @@ img {
 	margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
-	.container {
-		width: 320px;
-	}
-}
 @media screen and (min-width: 428px) {
 	.container {
 		width: 428px;
@@ -367,7 +362,7 @@ img {
 	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url("../images/hero428.jpg");
 	background-position: center;
-	background-size: 428px 432px;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 /* 2x screens, retina, 640x480 image */
