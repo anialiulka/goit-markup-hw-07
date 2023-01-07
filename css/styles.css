@@ -157,6 +157,7 @@ img {
 		height: 100%;
 	}
 }
+
 @media screen and (min-width: 1200px) {
 	.drop-menu {
 		gap: 332px;
@@ -288,11 +289,15 @@ img {
 .phone-number {
 	font-style: normal;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 24px;
 	line-height: 1.1;
 	color: var(--logo-hover-color);
 }
-
+@media screen and (min-width: 428px) {
+	.phone-number {
+		font-size: 36px;
+	}
+}
 .our-mail {
 	font-weight: 500;
 	font-size: 20px;
@@ -320,7 +325,13 @@ img {
 	}
 }
 .social-media.company {
-	gap: 56px;
+	justify-content: space-around;
+}
+@media screen and (min-width: 428px) {
+	.social-media.company {
+		gap: 56px;
+		justify-content: center;
+	}
 }
 @media screen and (min-width: 768px) {
 	.social-media.company {
@@ -794,10 +805,13 @@ img {
 }
 .footer-info {
 	margin-bottom: 72px;
-	padding-left: 66px;
-	padding-right: 66px;
 }
-
+@media (min-width: 428px) {
+	.footer-info {
+		padding-left: 66px;
+		padding-right: 66px;
+	}
+}
 .logo.bottom {
 	display: block;
 	margin-left: auto;
@@ -822,11 +836,6 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--button-background-color);
-}
-@media (max-width: 425px) {
-	.footer-text {
-		font-size: 10px;
-	}
 }
 
 .our-social {
@@ -987,11 +996,19 @@ img {
 }
 .modal {
 	position: relative;
-	min-width: 392px;
+	max-width: 392px;
 	padding: 72px 16px 24px 16px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
 	border-radius: 4px;
 	background-color: var(--modal-background-color);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+	.modal {
+		width: 408px;
+	}
 }
 .modal-button {
 	position: absolute;
@@ -1157,9 +1174,23 @@ textarea {
 	.list.filter {
 		display: flex;
 		flex-wrap: wrap;
-		padding-right: 133px;
+	}
+}
+@media (max-width: 427px) {
+	.list.filter {
 		margin-right: -24px;
 		margin-bottom: 32px;
+	}
+	.filter .item {
+		margin-right: 24px;
+		margin-bottom: 16px;
+	}
+}
+@media (min-width: 428px) and (max-width: 767px) {
+	.list.filter {
+		padding-right: 133px;
+		margin-right: -24px;
+		margin-bottom: 48px;
 	}
 	.filter .item {
 		margin-right: 24px;
