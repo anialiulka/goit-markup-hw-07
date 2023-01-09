@@ -100,8 +100,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
 	.main-nav {
-		gap: 76px;
 		align-items: center;
+		justify-content: flex-start;
 	}
 }
 
@@ -124,7 +124,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
 	.logo {
-		margin-right: 0;
+		margin-right: 76px;
 	}
 }
 .logo-front {
@@ -161,7 +161,7 @@ img {
 
 @media screen and (min-width: 1200px) {
 	.drop-menu {
-		justify-content: space-between;
+		gap: 331px;
 		padding: 0;
 		height: 100%;
 		align-items: center;
@@ -379,7 +379,7 @@ img {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-/* 2x screens, retina, 640x480 image */
+
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
 	.hero {
 		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -406,7 +406,7 @@ img {
 }
 @media (min-width: 768px) {
 	.hero {
-		max-width: 1440px;
+		max-width: 1200px;
 		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url("../images/hero1440.jpg");
 	}
@@ -432,6 +432,7 @@ img {
 @media (min-width: 1200px) {
 	.hero {
 		padding-bottom: 188px;
+		padding-top: 187px;
 	}
 }
 .hero .heading {
@@ -505,7 +506,7 @@ img {
 		font-weight: 400;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 76px) {
 	.values .item:not(:last-child) {
 		margin-bottom: 72px;
 	}
@@ -1013,7 +1014,6 @@ img {
 .modal {
 	position: absolute;
 	padding: 72px 16px 24px 16px;
-	height: 584px;
 	max-height: 90vh;
 	top: 50%;
 	left: 50%;
